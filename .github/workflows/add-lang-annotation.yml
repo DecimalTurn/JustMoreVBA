@@ -2,7 +2,7 @@ name: Add VBA language annotation
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" , "add-lang-annotation"]
   pull_request:
     branches: [ "main" , "add-lang-annotation"]
 
