@@ -1,0 +1,21 @@
+name: Add VBA language annotation
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Add VBA language annotation
+      uses: DecimalTurn/BASIC-Language-Annotation@main
+      with:
+        language: VBA
+        do-checkout: true
+        do-push: true
